@@ -1,0 +1,21 @@
+packages:
+  - "ruff"
+
+# Shared configuration
+shared-workspace-lockfile: true
+auto-install-peers: true
+prefer-workspace-packages: true
+
+# Hoisting settings
+hoist-pattern:
+  - "*eslint*"
+  - "*prettier*"
+  - "*typescript*"
+  - "@types/*"
+
+# Public hoist pattern for common dependencies
+public-hoist-pattern:
+  - "*"
+
+# Shamefully hoist (if needed for troublesome packages)
+shamefully-hoist: false
